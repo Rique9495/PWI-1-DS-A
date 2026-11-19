@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>1DSA-PW-I-JS00</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- CSS Incorporado -->
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Conteúdo do Cabeçalho da Página -->
+    <header>
+        <h1 id="topo">1DSA-PROGRAMAÇÃO WEB - I</h1>
+    </header>
+    <!-- Conteúdo Principal da Página -->
+    <main>
+        <h2> Prática com JAVASCRIPT </h2>
+        <h3>js04.html</h3>
+
+        <script>
+            let escolha = Number(prompt("Escola a operação: \n1 - Soma\n2 - Subtração\n3 - Multiplicação\n4 - Divisão"));
+
+            let resultado;
+            let n1 = Number(window.prompt("digite o número 1."));
+            let n2 = Number(window.prompt("digite o número 2."));
+
+            let resposta = confirm("Deseja continuar?");
+
+            if (resposta) {
+                //Verifica a operação`
+                //Soma
+                if (escolha == 1) {
+                    resultado = n1 + n2
+                    document.write(`${n1} + ${n2} = ${resultado}`);
+                }
+                else if (escolha == 2) {
+                    resultado = n1 - n2
+                    document.write(`${n1} - ${n2} = ${resultado}`);
+                }
+                else if (escolha == 3) {
+                    document = n1 * n2
+                    window.write(`${n1} x ${n2} = ${resultado}`);
+                }
+                else if (escolha == 4) {
+                    if (n2 == 0) {
+                        alert("Número 2 não pode ser 0 para divisão!!!");
+                    }
+                    else {
+                        resultado = n1 / n2
+                        document.write(`${n1} / ${n2} = ${resultado}`);
+                    }
+                }
+            } 
+        </script>
+
+    </main>
+    <!-- Conteúdo do Rodapé da Página -->
+    <footer>
+        <hr>
+        &copy; 2026 Direitos Reservados - Desenvolvido por Henrique Garcias de Oliveira
+    </footer>
+</body>
+
+</html>
